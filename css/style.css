@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    background-color: white;
+}
+/*
+.container{
+    margin: 100pc auto ;
+    height: 100%;
+}
+*/
+
+#lock{
+    width: 100%;
+    height: calc(100% - 15vh);
+    padding-bottom: 12vh;
+    min-height: 120px;
+}
+
+svg.patternlock g.lock-lines line{
+    stroke-width: 1.5;
+    stroke:black;
+    opacity: 0.5;
+}
+
+svg.patternlock g.lock-dots circle{
+    stroke:transparent;
+    fill: black;
+    stroke-width: 13.5;
+}
+
+svg.patternlock g.lock-actives circle{
+    fill: black;
+    opacity: 0.2;
+    animation: lock-activate-dot 0.15s 0s ease 1 ;
+    transform-origin: center;
+}
